@@ -14,7 +14,7 @@ namespace OdemeAppGun1.SOLID
         public ILog yeniNesneOlustur(string className)
         {
 
-            var newObject = System.Reflection.Assembly.GetAssembly(typeof(ILog)).CreateInstance("MyAvaloniaApp.SOLID." + className);
+            var newObject = System.Reflection.Assembly.GetAssembly(typeof(ILog)).CreateInstance("OdemeAppGun1.SOLID." + className);
 
             return (ILog)newObject;
         }

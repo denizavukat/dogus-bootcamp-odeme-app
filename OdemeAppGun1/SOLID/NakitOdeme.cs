@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NakitOdeme.SOLID
+namespace OdemeAppGun1.SOLID
 {
-    public class ApplePay : ILog
+    public class NakitOdeme : ILog
     {
         public string log(string message)
         {

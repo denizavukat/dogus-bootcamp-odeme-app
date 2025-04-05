@@ -2,8 +2,61 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="400"
         x:Class="OdemeAppGun1.MainWindow"
         Title="OdemeAppGun1">
-    Welcome to Avalonia!
+    <Canvas>
+    <!-- Log Tipi Label -->
+    <TextBlock x:Name="lblLogTipi" 
+               Text="Log Tipi : " 
+               Canvas.Left="300" 
+               Canvas.Top="57"/>
+    
+    <!-- ComboBox for Log Type with static items -->
+    <ComboBox x:Name="cmbLogTipi" 
+              Canvas.Left="448" 
+              Canvas.Top="58" 
+              Width="255" 
+              Height="23">
+      <ComboBoxItem Content="Kredi Kartı"/>
+      <ComboBoxItem Content="Mail Order"/>
+      <ComboBoxItem Content="Apple Pay"/>
+      <ComboBoxItem Content="Google Pay"/>
+      <ComboBoxItem Content="BTK Coin"/>
+      <ComboBoxItem Content="Retina Pay"/>
+      <ComboBoxItem Content="Nakit Ödeme"/>
+    </ComboBox>
+    
+    <!-- TextBox for Mesaj -->
+    <TextBox x:Name="txtTutar" 
+             Canvas.Left="450" 
+             Canvas.Top="120" 
+             Width="253" 
+             Height="23"/>
+    
+    <!-- Mesaj Label -->
+    <TextBlock x:Name="tutar" 
+               Text="Tutar:" 
+               Canvas.Left="300" 
+               Canvas.Top="123"/>
+    
+    <!-- Kaydet Button -->
+    <Button x:Name="btnOdemeYap" 
+            Content="Ödeme Yap" 
+            Canvas.Left="595" 
+            Canvas.Top="202" 
+            Width="150" 
+            Height="40"/>
+    
+    <!-- Sonuç Label -->
+    <TextBlock x:Name="txtboxSonuc" 
+               Text="Sonuç : " 
+               Canvas.Left="300" 
+               Canvas.Top="300"/>
+
+    <TextBlock x:Name="lblSonuc" 
+               Text=" " 
+               Canvas.Left="360" 
+               Canvas.Top="300"/>
+  </Canvas>
 </Window>
